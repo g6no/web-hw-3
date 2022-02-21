@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #131013;
+    font-family: 'Open Sans', sans-serif;;
+    margin: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.muted{
+    color: darkgray;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+h1.title,
+h2.title,
+/* h3.title, */
+h4.title,
+h5.title,
+h6.title{
+    text-shadow: 0 0 4px rgba(255, 0, 0, 0.205);
+    font-weight: bolds;
+}
+
+.overlay h3{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.overlay h3 span{
+    text-shadow: 0 0 5px red;
+}
+
+button{
+    background-color: #edeaeddc;
+    color: black;
+    border: 2px solid #edeaed4b;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #edeaed31;
+}
+
+header{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+nav{
+    /* position: fixed;  */
+    font-size: small;
+    color: white;
+    background-color: #131013;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    font-family: 'Press Start 2P', cursive;
+}
+
+nav .logo{
+    width: 129px;
+}
+
+nav span{
+    margin-left: 30px;
+    font-size: 35px;
+    text-shadow: 0 0 5px red;
+    color: whitesmoke;
+}
+/* nav img.logo */
+
+nav ul.navList{
+    margin: 30px;
+    padding: 0;
+}
+
+nav ul.navList li{
+    display: inline;
+    margin-left: 16px;
+}
+
+#welcomeSection {
+    height: 70vh;
+    background-image: url(../images/cosmicMan.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#welcomeSection .overlay{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#welcomeSection span {
+    color: white;
+    font-size: 25px;
+}
+
+#work{
+    padding: 8px 8px;
+    background-color: #edeaeddc;
+}
+
+#work .workList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#work .workList .card{
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+@media (max-width: 650px){
+    #work .workList{
+        display: block;
+    }
+
+    #work .workList .card{
+        width: 100%;
+        margin-bottom: 32px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+footer{
+    background-color:#080708;
+    color: white;
+    padding: 16px 0;
+}
+
+footer span{
+    color: red;
+}
+
+p span{
+    color: red;
+}
+
+.workList a:hover{
+    color: black;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contact{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
